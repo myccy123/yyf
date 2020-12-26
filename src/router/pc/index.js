@@ -33,6 +33,12 @@ const router = new Router({
       hidden: true
     },
     {
+      path: '/JTAirBox',
+      name: 'airDev',
+      component: PCAirBoxView,
+      hidden: true
+    },
+    {
       path: '/home',
       name: '',
       component: PCMain,
@@ -156,7 +162,7 @@ router.beforeEach((to, from, next) => {
       router.options.routes.push(...newRoutes)
     }
   } else {
-    return next('/login')
+    return next()
   }
   next()
 })

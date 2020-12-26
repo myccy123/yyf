@@ -179,10 +179,11 @@ export default {
       /** **************************分页查询参数************************** **/
       queryDeviceName: '', // 用于模糊查询的 DeviceName
       pageShow: 'true',
-      currentPage: '1', // 当前页
-      pageSize: '20', // 每页大小
-      total: '', // 总数量
-      tableHeight: window.innerHeight - 135
+      currentPage: 1, // 当前页
+      pageSize: 20, // 每页大小
+      total: 0, // 总数量
+      tableHeight: window.innerHeight - 135,
+      tableData: []
     }
   },
   created () {

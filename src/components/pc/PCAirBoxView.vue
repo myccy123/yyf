@@ -320,11 +320,14 @@ export default {
       activeName: 'dataView',
       iconData: 'el-icon-pie-chart',
       buttonText: '图表',
+      tableData: [],
+      deviceList: [],
+      orgList: [],
       tableHeight: window.innerHeight - 135,
       pageShow: 'true',
-      currentPage: '1', // 当前页
-      pageSize: '50', // 每页大小
-      total: '', // 总数量
+      currentPage: 1, // 当前页
+      pageSize: 50, // 每页大小
+      total: 0, // 总数量
       chartDateTime: [],
       chartDataTemperature: [],
       chartDataHumidity: [],
