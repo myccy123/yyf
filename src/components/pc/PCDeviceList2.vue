@@ -132,8 +132,12 @@
     align-items: center;
     width: 80px;
     height: 80px;
-    border: 1px solid lightgrey;
+    /*border: 1px solid lightgrey;*/
     border-radius: 5px;
+  }
+
+  .el-card{
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)!important;
   }
 </style>
 

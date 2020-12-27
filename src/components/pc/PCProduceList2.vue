@@ -116,7 +116,7 @@
   </el-container>
 </template>
 
-<style>
+<style scoped>
   .el-table{
     font-size: 14px;
   }

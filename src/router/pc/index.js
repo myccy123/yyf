@@ -39,6 +39,18 @@ const router = new Router({
       hidden: true
     },
     {
+      path: '/JT2210',
+      name: 'JT2210',
+      component: PCAirBoxView,
+      hidden: true
+    },
+    {
+      path: '/JTR25Z',
+      name: 'JTR25Z',
+      component: PCAirBoxView,
+      hidden: true
+    },
+    {
       path: '/home',
       name: '',
       component: PCMain,
@@ -57,7 +69,7 @@ const router = new Router({
       name: '设备管理',
       component: PCMain,
       meta: {
-        icon: 'el-icon-setting',
+        icon: 'el-icon-s-opportunity',
         auth: true,
         roles: ['jantech', 'user']
       },
@@ -141,7 +153,7 @@ export let permissionRouter = [
  * from--代表从哪个路径跳转而来
  * next--是一个函数，表示放行；两种用法：next()放行,next('/login')强制跳转
  */
-let addRouFlag = false
+let addRouFlag = true
 router.beforeEach((to, from, next) => {
   if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
     window.location.href = '/m_login.html#/'
