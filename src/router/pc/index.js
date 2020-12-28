@@ -33,24 +33,6 @@ const router = new Router({
       hidden: true
     },
     {
-      path: '/JTAirBox',
-      name: 'airDev',
-      component: PCAirBoxView,
-      hidden: true
-    },
-    {
-      path: '/JT2210',
-      name: 'JT2210',
-      component: PCAirBoxView,
-      hidden: true
-    },
-    {
-      path: '/JTR25Z',
-      name: 'JTR25Z',
-      component: PCAirBoxView,
-      hidden: true
-    },
-    {
       path: '/home',
       name: '',
       component: PCMain,
@@ -81,7 +63,25 @@ const router = new Router({
           meta: {
             roles: ['jantech', 'user']
           }
-        }
+        },
+        {
+          path: '/JTAirBox',
+          name: 'airDev',
+          component: PCAirBoxView,
+          hidden: true
+        },
+        {
+          path: '/JT2210',
+          name: 'JT2210',
+          component: PCAirBoxView,
+          hidden: true
+        },
+        {
+          path: '/JTR25Z',
+          name: 'JTR25Z',
+          component: PCAirBoxView,
+          hidden: true
+        },
       ]
     },
     {

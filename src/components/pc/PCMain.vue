@@ -33,6 +33,7 @@
               <i v-if="item.meta.icon" :class="item.meta.icon" style="color: #fff"></i><span>{{item.name}}</span>
             </template>
             <el-menu-item v-for="(item2,index2) in item.children" :key="index2"
+                          v-if="!item2.hidden"
                           :class="$route.path===item2.path?'is-active':''" :index="item2.path">{{item2.name}}
             </el-menu-item>
           </el-submenu>
