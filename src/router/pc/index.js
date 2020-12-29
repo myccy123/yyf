@@ -15,6 +15,7 @@ import PCProduceAdd from '../../components/pc/PCProduceAdd'
 import PCDeviceQRCodeList from '../../components/pc/PCDeviceQRCodeList'
 import PCAirBoxView from '../../components/pc/PCAirBoxView'
 import PCAirBoxView2 from '../../components/pc/PCAirBoxView2'
+import PCJT2210View2 from '../../components/pc/PCJT2210View2'
 
 Vue.use(Router)
 
@@ -73,7 +74,7 @@ const router = new Router({
         {
           path: '/JT2210',
           name: 'JT2210',
-          component: PCAirBoxView,
+          component: PCJT2210View2,
           hidden: true
         },
         {
