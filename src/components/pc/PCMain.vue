@@ -66,7 +66,7 @@
     overflow: auto;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 0 0 2px;
+    padding: 0 0 0 2px!important;
   }
   .el-aside {
     color: #333;
