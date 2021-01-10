@@ -110,7 +110,7 @@
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH01_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach01_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -118,16 +118,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch01_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH02_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach02_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -135,16 +135,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch02_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH03_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach03_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -152,16 +152,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch03_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH04_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach04_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -169,16 +169,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch04_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH05_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach05_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -186,16 +186,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch05_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH06_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach06_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -203,16 +203,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch06_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH07_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach07_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -220,16 +220,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch07_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH08_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach08_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -237,16 +237,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch08_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH09_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach09_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -254,16 +254,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch09_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH10_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach10_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -271,16 +271,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch10_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH11_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach11_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -288,16 +288,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch11_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH12_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach12_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -305,9 +305,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch12_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -315,7 +315,7 @@
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH13_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach13_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -323,16 +323,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch13_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH14_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach14_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -340,16 +340,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch14_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH15_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach15_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -357,16 +357,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch15_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH16_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach16_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -374,16 +374,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch16_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH17_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach17_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -391,16 +391,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch17_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH18_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach18_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -408,9 +408,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch18_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -418,7 +418,7 @@
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH19_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach19_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -426,16 +426,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch19_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH20_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach20_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -443,16 +443,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch20_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH21_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach21_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -460,16 +460,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch21_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH22_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach22_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -477,16 +477,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch22_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH23_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach23_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -494,16 +494,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch23_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH24_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach24_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -511,9 +511,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch24_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -521,7 +521,7 @@
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH25_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach25_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -529,16 +529,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch25_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH25_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach25_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -546,16 +546,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch25_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH26_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach26_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -563,16 +563,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch26_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH26_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach26_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -580,16 +580,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch26_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH27_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach27_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -597,16 +597,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch27_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH27_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach27_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -614,16 +614,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch27_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH28_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach28_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -631,16 +631,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch28_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH28_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach28_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -648,16 +648,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch28_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH29_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach29_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -665,16 +665,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch29_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH29_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach29_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -682,16 +682,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch29_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#热流" chart-unit="W/m2" series-name="热流"
+                  <TChart chart-title="#CH30_H热流" chart-unit="W/m2" series-name="热流"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach30_h"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -699,16 +699,16 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">2.6</div>
+                  <div class="current_value">{{lastData.ch30_h}}</div>
                   <div class="current_unit">瓦/平米[W/m2]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
             <el-row>
               <el-col :span="20">
                 <div class="grid-content-left">
-                  <TChart chart-title="#温度" chart-unit="℃" series-name="温度"
+                  <TChart chart-title="#CH30_T温度" chart-unit="℃" series-name="温度"
                           :chart-x-data="chartDateTime" :chart-y-data="chartDatach30_t"
                           v-if="'chartView' === activeName">tab1</TChart>
                 </div>
@@ -716,9 +716,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">21.6</div>
+                  <div class="current_value">{{lastData.ch30_t}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -864,9 +864,11 @@ export default {
       buttonText: '图表',
       tableHeight: window.innerHeight - 135,
       pageShow: 'true',
-      currentPage: '1', // 当前页
-      pageSize: '50', // 每页大小
-      total: '', // 总数量
+
+      currentPage: 1, // 当前页
+      pageSize: 50, // 每页大小
+      total: 0, // 总数量
+      tableData: [],
       chartDateTime: [],
       chartDatach01_t: [],
       chartDatach02_t: [],
@@ -903,11 +905,13 @@ export default {
       chartDatach29_h: [],
       chartDatach29_t: [],
       chartDatach30_h: [],
-      chartDatach30_t: []
+      chartDatach30_t: [],
+      lastData: {}
     }
   },
   created () {
-    this.getData(0)
+    this.getData(0);
+    this.getCurrentData();
   },
   mounted () {
     document.getElementById('scrollbar').style.height = window.innerHeight - 100 + 'px'
@@ -958,6 +962,56 @@ export default {
       this.pageSize = size
       this.currentPage = 1
       this.getData(0)
+    },
+    getCurrentData() {
+      let url = '/JT2210/findLatestData';
+      let params = {deviceCode: this.queryDeviceCode};
+      this.$axios.get(url, {params: params}).then(res=>{
+        let data = res.data;
+
+        this.lastData.ch01_t = data.ch01_t;
+        this.lastData.ch02_t = data.ch02_t;
+        this.lastData.ch03_t = data.ch03_t;
+        this.lastData.ch04_t = data.ch04_t;
+        this.lastData.ch05_t = data.ch05_t;
+        this.lastData.ch06_t = data.ch06_t;
+        this.lastData.ch07_t = data.ch07_t;
+        this.lastData.ch08_t = data.ch08_t;
+        this.lastData.ch09_t = data.ch09_t;
+        this.lastData.ch10_t = data.ch10_t;
+        this.lastData.ch11_t = data.ch11_t;
+        this.lastData.ch12_t = data.ch12_t;
+        this.lastData.ch13_h = data.ch13_h;
+        this.lastData.ch14_h = data.ch14_h;
+        this.lastData.ch15_h = data.ch15_h;
+        this.lastData.ch16_h = data.ch16_h;
+        this.lastData.ch17_h = data.ch17_h;
+        this.lastData.ch18_h = data.ch18_h;
+        this.lastData.ch19_t = data.ch19_t;
+        this.lastData.ch20_t = data.ch20_t;
+        this.lastData.ch21_t = data.ch21_t;
+        this.lastData.ch22_t = data.ch22_t;
+        this.lastData.ch23_t = data.ch23_t;
+        this.lastData.ch24_t = data.ch24_t;
+        this.lastData.ch25_h = data.ch25_h;
+        this.lastData.ch25_t = data.ch25_t;
+        this.lastData.ch26_h = data.ch26_h;
+        this.lastData.ch26_t = data.ch26_t;
+        this.lastData.ch27_h = data.ch27_h;
+        this.lastData.ch27_t = data.ch27_t;
+        this.lastData.ch28_h = data.ch28_h;
+        this.lastData.ch28_t = data.ch28_t;
+        this.lastData.ch29_h = data.ch29_h;
+        this.lastData.ch29_t = data.ch29_t;
+        this.lastData.ch30_h = data.ch30_h;
+        this.lastData.ch30_t = data.ch30_t;
+        this.lastData.dateTime = data.dateTime;
+
+
+      }).catch(err=>{
+        console.log(err)
+      })
+
     },
     // ----------以下为分页查询数据方法--------------
     getData (pageNumber) {

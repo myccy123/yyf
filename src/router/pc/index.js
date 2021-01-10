@@ -68,7 +68,7 @@ const router = new Router({
         {
           path: '/JTAirBox',
           name: 'airDev',
-          component: PCAirBoxView,
+          component: PCAirBoxView2,
           hidden: true
         },
         {

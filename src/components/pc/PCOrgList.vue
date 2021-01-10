@@ -154,12 +154,12 @@ export default {
       /** **************************添加单位对话框************************** **/
       addDialogVisible: false,
       addForm: {
-        orgCode: '1100',
-        orgName: '建通科技',
-        linkman: '姚宇飞',
-        tel: '18510239192',
-        address: '北京市丰台区航丰路1号 时代财富天地大厦2313室',
-        memo: '添加备注信息……'
+        orgCode: '',
+        orgName: '',
+        linkman: '',
+        tel: '',
+        address: '',
+        memo: ''
       },
       addFormRules: {
         orgCode: [

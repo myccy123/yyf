@@ -60,9 +60,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">32.6</div>
+                  <div class="current_value">{{lastData.temperature}}</div>
                   <div class="current_unit">摄氏度[℃]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -77,9 +77,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">52.6</div>
+                  <div class="current_value">{{lastData.humidity}}</div>
                   <div class="current_unit">百分比[%RH]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -94,9 +94,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">328.2</div>
+                  <div class="current_value">{{lastData.co2}}</div>
                   <div class="current_unit">百万分比[ppm]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -111,9 +111,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">32.6</div>
+                  <div class="current_value">{{lastData.pm25}}</div>
                   <div class="current_unit">微克/立方米[ug/m3]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -128,9 +128,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">32.6</div>
+                  <div class="current_value">{{lastData.co}}</div>
                   <div class="current_unit">微克/立方米[ug/m3]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -145,9 +145,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">32.6</div>
+                  <div class="current_value">{{lastData.tvoc}}</div>
                   <div class="current_unit">微克/立方米[ug/m3]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -162,9 +162,9 @@
               <el-col :span="4">
                 <div class="grid-content-right">
                   <div><label>最新数据</label></div>
-                  <div class="current_value">32.6</div>
+                  <div class="current_value">{{lastData.ch2o}}</div>
                   <div class="current_unit">微克/立方米[ug/m3]</div>
-                  <div class="current_date">更新时间:2020-06-15 15:48:52 </div>
+                  <div class="current_date">更新时间:{{lastData.dateTime}} </div>
                 </div>
               </el-col>
             </el-row>
@@ -192,6 +192,10 @@
 </template>
 
 <style>
+  .el-tabs__header {
+    display: none;
+  }
+
   .el-tabs__nav-wrap {
     visibility: hidden;
   }
@@ -305,12 +309,13 @@ export default {
       queryDialogVisible: false,
       activeName: 'dataView',
       iconData: 'el-icon-pie-chart',
+      tableData: [],
       buttonText: '图表',
       tableHeight: window.innerHeight - 135,
       pageShow: 'true',
-      currentPage: '1', // 当前页
-      pageSize: '50', // 每页大小
-      total: '', // 总数量
+      currentPage: 1, // 当前页
+      pageSize: 50, // 每页大小
+      total: 0, // 总数量
       chartDateTime: [],
       chartDataTemperature: [],
       chartDataHumidity: [],
@@ -318,11 +323,13 @@ export default {
       chartDataPM25: [],
       chartDataCO: [],
       chartDataTVOC: [],
-      chartDataCH2O: []
+      chartDataCH2O: [],
+      lastData: {},
     }
   },
   created () {
-    this.getData(0)
+    this.getData(0);
+    this.getLastData();
   },
   mounted () {
     document.getElementById('scrollbar').style.height = window.innerHeight - 100 + 'px'
@@ -373,6 +380,26 @@ export default {
       this.pageSize = size
       this.currentPage = 1
       this.getData(0)
+    },
+    getLastData() {
+      let url = '/airBox/findLatestData';
+      let params = {deviceCode: this.queryDeviceCode};
+      this.$axios.get(url, {params: params}).then(res=>{
+        let data = res.data;
+        console.log(data)
+        this.lastData.ch2o = data.ch2o;
+        this.lastData.co = data.co;
+        this.lastData.co2 = data.co2;
+        this.lastData.humidity = data.humidity;
+        this.lastData.pm25 = data.pm25;
+        this.lastData.temperature = data.temperature;
+        this.lastData.tvoc = data.tvoc;
+        this.lastData.dateTime = data.dateTime;
+
+
+      }).catch(err=>{
+        console.log(err)
+      })
     },
     // ----------以下为分页查询数据方法--------------
     getData (pageNumber) {

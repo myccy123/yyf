@@ -9,7 +9,7 @@ function resolve(dir) {
     return path.join(__dirname, dir)
 }
 module.exports = {
-    publicPath: isProduction ? '/yyf' : '/',
+    publicPath: isProduction ? '/JT' : '/',
     configureWebpack: config => {
         if (isProduction) {
             config.plugins.push(new CompressionWebpackPlugin({

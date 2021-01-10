@@ -165,8 +165,9 @@
   .el-table{
     font-size: 14px;
   }
+
   .el-table td, .el-table th{
-    padding: 3px 0;
+    padding: 3px 0!important;
   }
   .el-dialog__body {
     padding: 0 20px;
@@ -242,12 +243,12 @@ export default {
       orgList: [],
       addDialogVisible: false,
       addForm: {
-        userId: 'renyue',
-        userName: '任跃',
-        password: '123456',
-        password2: '123456',
-        mobile: '13523456547',
-        email: 'renyue@bjjttec.com',
+        userId: '',
+        userName: '',
+        password: '',
+        password2: '',
+        mobile: '',
+        email: '',
         orgCode: '',
         rid: 0,
         grade: 0

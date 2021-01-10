@@ -65,11 +65,11 @@
           <el-row :gutter="20" style="background: white">
             <el-col :span="10">
               <el-upload
-                class="avatar-uploader"
-                action="http://127.0.0.1:8181/product/imageUpload"
-                :show-file-list="false"
-                :on-success="handleAvatarSuccess"
-                :before-upload="beforeAvatarUpload">
+                      class="avatar-uploader"
+                      action="http://112.125.16.236:8181/product/imageUpload"
+                      :show-file-list="false"
+                      :on-success="handleAvatarSuccess"
+                      :before-upload="beforeAvatarUpload">
                 <img v-if="imgUrl" :src="imgUrl" class="avatar">
                 <i v-else class="el-icon-plus avatar-uploader-icon"></i>
               </el-upload>
@@ -175,6 +175,7 @@ export default {
         imageUrl: '',
         memo: ''
       },
+      tableData: [],
       addFormRules: {
         productCode: [
           {required: true, message: '请输入产品型号', trigger: 'blur'},
@@ -199,9 +200,9 @@ export default {
       },
       /** **************************分页查询参数************************** **/
       pageShow: 'true',
-      currentPage: '1', // 当前页
-      pageSize: '20', // 每页大小
-      total: '', // 总数量
+      currentPage: 1, // 当前页
+      pageSize: 20, // 每页大小
+      total: 0, // 总数量
       tableHeight: window.innerHeight - 135
     }
   },

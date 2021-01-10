@@ -50,8 +50,8 @@ export default {
     return {
       // 登录表单的数据访问对象
       loginForm: {
-        userId: 'yaoyufei',
-        password: '123'
+        userId: '',
+        password: ''
       },
       loginFormRules: {
         userId: [
@@ -82,9 +82,11 @@ export default {
             token只有在当前网站打开期间生效，所以将token包存到sessionStorge中
           2.使用 vue-router 路由到指定页面，该方式称之为编程式导航
           */
-          let getUserRole = res.user.rid === '2313' ? 'jantech' : 'user'
+          let getUserRole = res.user.rid === '2313' ? 'jantech' : 'user';
+          let userName = res.user.userName;
           console.log(getUserRole)
           localStorage.setItem('userRole', getUserRole)
+          localStorage.setItem('userName', userName)
           window.sessionStorage.setItem('token', res.token)
           this.$router.push('/home')
         } else { return false }

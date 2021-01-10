@@ -2,7 +2,7 @@
   <el-container style="height: 100%; border: 1px solid #eee;">
     <el-header class="nav-bar">
       <div>
-        <span style="font-size: 22px;color: #fff;font-weight: bold">智能设备集成平台</span>
+        <span style="font-size: 22px;color: #fff;font-weight: bold">智能设备管理平台</span>
       </div>
       <div>
         <el-dropdown v-show="false">
@@ -13,7 +13,7 @@
             <el-dropdown-item>删除</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
-        <span style="color: #fff">管理员</span>
+        <span style="color: #fff">{{userName}}</span>
         <el-button @click="outSystem" size="mini" plain type="primary" style="margin-left: 20px;">退出</el-button>
       </div>
     </el-header>
@@ -89,7 +89,8 @@ export default {
   data () {
     return {
       // 是否折叠左侧导航栏
-      isCollapse: false
+      isCollapse: false,
+      userName: localStorage.getItem('userName'),
     }
   },
   methods: {

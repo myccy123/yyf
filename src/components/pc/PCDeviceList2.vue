@@ -20,7 +20,7 @@
             <el-row>
               <el-card :body-style="{ padding: '2px' }" shadow="never">
                 <el-col :span="3">
-                  <img src="../../assets/img/JTAirBox-4.jpg" class="image">
+                  <img :src="scope.row.imgUrl" class="image">
                 </el-col>
                 <el-col :span="20" align="left" >
                   <div style="padding: 6px;">

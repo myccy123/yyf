@@ -49,11 +49,12 @@
           <el-col :span="10">
             <el-upload
               class="avatar-uploader"
-              action="https://jsonplaceholder.typicode.com/posts/"
-              :show-file-list="false"
-              :on-success="handleAvatarSuccess"
-              :before-upload="beforeAvatarUpload">
-              <img v-if="imageUrl" :src="imageUrl" class="avatar">
+              action="#"
+              :auto-upload="false"
+              :show-file-list="false">
+              <div v-if="file.url" slot="file" slot-scope="{file}">
+              <img :src="file.url" class="avatar">
+              </div>
               <i v-else class="el-icon-plus avatar-uploader-icon"></i>
             </el-upload>
           </el-col>
@@ -173,9 +174,9 @@ export default {
       },
       /** **************************分页查询参数************************** **/
       pageShow: 'true',
-      currentPage: '1', // 当前页
-      pageSize: '20', // 每页大小
-      total: '', // 总数量
+      currentPage: 1, // 当前页
+      pageSize: 20, // 每页大小
+      total: 0, // 总数量
       tableHeight: window.innerHeight - 135
     }
   },
